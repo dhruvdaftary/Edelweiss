@@ -108,10 +108,4 @@ The frontend application should now be accessible at `http://localhost:3000/`, w
 
 ## Team
 
-To make this project a great success the following are the contributors:
-
-💻 Dhruv Daftary
-💻 Shreeja Ravikumar
-💻 Jatin Saraf
-
-made with 💖 from 
+<h3 align="center"><b>Developed with :heart: by <a href="https://github.com/dhruvdaftary">Dhruv Daftary</a>,  <a href="https://github.com/Shreeeja">Shreeja Ravikumar</a> and  <a href="https://github.com/JatinSaraf">Jatin Saraf</a></b></h1>

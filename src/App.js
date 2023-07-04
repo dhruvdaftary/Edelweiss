@@ -73,7 +73,7 @@ const App = () => {//Main component
                   <tr key={index}>
                     <td>{message.underlying}</td>
                     <td>{message.expiryDate}</td>
-                    <td className={isITM ? 'itm' : isOTM ? 'otm' : ''}>{message.strikePrice}</td>//Adding class based on the condition
+                    <td className={isITM ? 'itm' : isOTM ? 'otm' : ''}>{message.strikePrice}</td>
                     <td>{message.optionType}</td>
                     {/* <td>{message.timestamp}</td> */}
                     <td>{message.ltp}</td>
@@ -95,7 +95,7 @@ const App = () => {//Main component
         </div>
       </main>
       <footer className="footer">
-        <p className="footer__text">&copy; {currentYear} Edelweiss. All rights reserved. Developed by Dhruv Daftary, Jatin Saraf and Shreeja Ravikumar</p>//Footer text
+        <p className="footer__text">&copy; {currentYear} Edelweiss. All rights reserved. Developed by Dhruv Daftary, Jatin Saraf and Shreeja Ravikumar</p>
       </footer>
     </div>
   );

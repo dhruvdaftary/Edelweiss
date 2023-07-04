@@ -10,8 +10,7 @@ This project aims to collect data packets from a TCP/IP server, process the coll
 - [Installation](#installation)
 - [Usage](#usage)
 - [Technologies Used](#technologies-used)
-- [Contributing](#contributing)
-- [License](#license)
+- [Team](#team)
 
 ## Introduction
 
@@ -19,41 +18,43 @@ In today's digital world, data transmission and real-time processing are vital c
 
 The system involves three main components:
 
-1. TCP/IP Server: The data source that generates and sends data packets over a TCP/IP connection.
-2. Node.js Backend: Responsible for receiving, processing, and storing the data packets in a suitable format.
-3. React Frontend: Displays the processed data in a user-friendly way, enabling users to interact with the real-time data stream.
+👉 TCP/IP Server: The data source that generates and sends data packets over a TCP/IP connection.
+👉 Node.js Backend: Responsible for receiving, processing, and storing the data packets in a suitable format.
+👉 React Frontend: Displays the processed data in a user-friendly way, enabling users to interact with the real-time data stream.
 
-## Features
 
-- Collects data packets from a TCP/IP server.
-- Processes the data packets on the Node.js backend.
-- Real-time data processing and visualization in the React frontend.
-- Simple and modular architecture for easy understanding and extendibility.
 
-## Installation
+## Features 💡
+
+👉 Collects data packets from a TCP/IP server.
+👉 Processes the data packets on the Node.js backend.
+👉 Real-time data processing and visualization in the React frontend.
+👉 Simple and modular architecture for easy understanding and extendibility.
+
+## Installation 🖥
 
 To set up the project on your local machine, follow the steps below:
 
 1. Clone the repository:
 
-```bash
+bash
 git clone 
-```
+
 
 2. Navigate to the project directory:
 
-```bash
+bash
 cd dir
-```
+
 
 3. Install dependencies for both backend and frontend:
 
-```bash
+bash
 cd backend
 npm install
 cd ../frontend
 npm install
-```
+
 
 4. Configure TCP/IP Server settings:
 
@@ -65,15 +66,15 @@ Edit the `server.config.js` file in the `backend` directory to set up the TCP/IP
 
 1. Go to the `backend` directory:
 
-```bash
+bash
 cd backend
-```
+
 
 2. Start the Node.js server:
 
-```bash
+bash
 npm start
-```
+
 
 The backend server should now be running and ready to accept incoming data packets from the TCP/IP server.
 
@@ -81,27 +82,36 @@ The backend server should now be running and ready to accept incoming data packe
 
 1. Go to the `frontend` directory:
 
-```bash
+bash
 cd frontend
-```
+
 
 2. Start the React development server:
 
-```bash
+bash
 npm start
-```
+
 
 The frontend application should now be accessible at `http://localhost:3000/`, where you can view the real-time data processing.
 
 ## Technologies Used
 
-- TCP/IP
-- Node.js
-- Express.js
-- React
-- WebSocket
-- Net
-- JavaScript/ES6+
-- HTML5
-- CSS3
+📦 TCP/IP
+📦 Node.js
+📦 Express.js
+📦 React
+📦 WebSocket
+📦 Net
+📦 JavaScript/ES6+
+📦 HTML5
+📦 CSS3
 
+## Team
+
+To make this project a great success the following are the contributors:
+
+💻 Dhruv Daftary
+💻 Shreeja Ravikumar
+💻 Jatin Saraf
+
+made with 💖 from 

@@ -42,7 +42,7 @@ const App = () => {//Main component
         </nav>
       </header>
       <main>
-        <div className="table-container">
+        <div className="main-containe">
           <table>
             <thead className="table__head">
               <tr>

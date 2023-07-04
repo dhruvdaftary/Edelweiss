@@ -220,74 +220,78 @@ function parseTradingSymbol(tradingSymbol) {
     let expiryDate = '';
     let strikePrice = '';
     let optionType = '';
-
+  
     // Extract the underlying symbol (first part)
-    underlying = tradingSymbol.substring(0, 15).trim().replace(/[^A-Za-z]/g, '');
-
+    const underlyingRegex = /^[A-Za-z]+/;
+    const underlyingMatch = tradingSymbol.match(underlyingRegex);
+    if (underlyingMatch) {
+      underlying = underlyingMatch[0].trim();
+    }
+  
     // Extract the expiry date (second part)
     const expiryRegex = /(\d{2}[A-Z]{3}\d{2})/;
     const expiryMatch = tradingSymbol.match(expiryRegex);
     if (expiryMatch) {
-        expiryDate = expiryMatch[0];
+      expiryDate = expiryMatch[0];
     }
-
+  
     // Extract the strike price and option type (third and fourth part, applicable for options and futures symbols)
-    const optionPart = tradingSymbol.substring(15).trim();
+    const optionPart = tradingSymbol.substring(underlying.length + expiryDate.length).trim();
     const optionParts = optionPart.split(' ');
-
+  
     if (optionParts.length >= 2) {
-        const digitsRegex = /\d+/;
-        const alphabetsRegex = /[A-Za-z]+/;
-
-        const strikePriceMatch = optionParts[0].match(digitsRegex);
-        const optionTypeMatch = optionParts[optionParts.length - 1].match(alphabetsRegex);
-
-        if (strikePriceMatch) {
-            strikePrice = strikePriceMatch[0].trim();
+      const digitsRegex = /\d+/;
+      const alphabetsRegex = /[A-Za-z]+/;
+  
+      const strikePriceMatch = optionParts[0].match(digitsRegex);
+      const optionTypeMatch = optionParts[optionParts.length - 1].match(alphabetsRegex);
+  
+      if (strikePriceMatch) {
+        strikePrice = strikePriceMatch[0].trim();
+      }
+  
+      if (optionTypeMatch) {
+        const optionTypeValue = optionTypeMatch[0].trim();
+  
+        if (optionTypeValue === 'XX') {
+          optionType = 'Future Option';
+          strikePrice = '0';
+        } else if (optionTypeValue === 'PE') {
+          optionType = 'Put Option';
+        } else if (optionTypeValue === 'CE') {
+          optionType = 'Call Option';
         }
-
-        if (optionTypeMatch) {
-            const optionTypeValue = optionTypeMatch[0].trim();
-
-            if (optionTypeValue === 'XX') {
-                optionType = 'Future Option';
-                strikePrice = '0';
-            } else if (optionTypeValue === 'PE') {
-                optionType = 'Put Option';
-            } else if (optionTypeValue === 'CE') {
-                optionType = 'Call Option';
-            }
-        }
+      }
     } else if (optionParts.length === 1) {
-        const digitsRegex = /\d+/;
-        const alphabetsRegex = /[A-Za-z]+/;
-
-        const strikePriceMatch = optionParts[0].match(digitsRegex);
-        const optionTypeMatch = optionParts[0].match(alphabetsRegex);
-
-        if (strikePriceMatch) {
-            strikePrice = strikePriceMatch[0].trim();
+      const digitsRegex = /\d+/;
+      const alphabetsRegex = /[A-Za-z]+/;
+  
+      const strikePriceMatch = optionParts[0].match(digitsRegex);
+      const optionTypeMatch = optionParts[0].match(alphabetsRegex);
+  
+      if (strikePriceMatch) {
+        strikePrice = strikePriceMatch[0].trim();
+      }
+  
+      if (optionTypeMatch) {
+        const optionTypeValue = optionTypeMatch[0].trim();
+  
+        if (optionTypeValue === 'XX') {
+          optionType = 'Future Option';
+          strikePrice = '0';
+        } else if (optionTypeValue === 'PE') {
+          optionType = 'Put Option';
+        } else if (optionTypeValue === 'CE') {
+          optionType = 'Call Option';
         }
-
-        if (optionTypeMatch) {
-            const optionTypeValue = optionTypeMatch[0].trim();
-
-            if (optionTypeValue === 'XX') {
-                optionType = 'Future Option';
-                strikePrice = '0';
-            } else if (optionTypeValue === 'PE') {
-                optionType = 'Put Option';
-            } else if (optionTypeValue === 'CE') {
-                optionType = 'Call Option';
-            }
-        }
+      }
     }
-
+  
     return {
-        underlying,
-        expiryDate,
-        strikePrice,
-        optionType
+      underlying,
+      expiryDate,
+      strikePrice,
+      optionType
     };
-}
-
+  }
+  

@@ -3,6 +3,10 @@
 
 This project aims to collect data packets from a TCP/IP server, process the collected data on a Node.js backend, and display the processed output in a React frontend. The application serves as an example of how to handle real-time data streams and visualize the processed data using modern web technologies.
 
+
+The link for video presentation is
+https://drive.google.com/file/d/11YrMdpFthOPCd9742RUr8TzRAohVGvfi/view?usp=drive_link 
+
 ## Some Snapshots
 
 <img width="960" alt="image" src="https://github.com/dhruvdaftary/Edelweiss/assets/60394627/64fcdd98-5cab-444d-8fa2-3fd2ce4ac67b">

@@ -6,8 +6,10 @@ This project aims to collect data packets from a TCP/IP server, process the coll
 ## Some Snapshots
 
 <img width="960" alt="image" src="https://github.com/dhruvdaftary/Edelweiss/assets/60394627/64fcdd98-5cab-444d-8fa2-3fd2ce4ac67b">
-<img width="946" alt="image" src="https://github.com/dhruvdaftary/Edelweiss/assets/60394627/e6291103-7599-4314-a67a-bcd5ce25eb96">
-<img width="948" alt="image" src="https://github.com/dhruvdaftary/Edelweiss/assets/60394627/4777f320-c2ae-44b0-b42e-89cb59476803">
+<img width="950" alt="image" src="https://github.com/dhruvdaftary/Edelweiss/assets/60394627/67a41003-25c9-45cd-a786-31f48ee3ce21">
+<img width="947" alt="image" src="https://github.com/dhruvdaftary/Edelweiss/assets/60394627/1e80ad5b-4580-4a25-a52f-58a17ff70715">
+
+
 
 
 

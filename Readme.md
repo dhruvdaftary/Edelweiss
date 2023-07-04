@@ -9,13 +9,9 @@ https://drive.google.com/file/d/11YrMdpFthOPCd9742RUr8TzRAohVGvfi/view?usp=drive
 
 ## Some Snapshots
 
-<img width="960" alt="image" src="https://github.com/dhruvdaftary/Edelweiss/assets/60394627/64fcdd98-5cab-444d-8fa2-3fd2ce4ac67b">
-<img width="950" alt="image" src="https://github.com/dhruvdaftary/Edelweiss/assets/60394627/67a41003-25c9-45cd-a786-31f48ee3ce21">
-<img width="947" alt="image" src="https://github.com/dhruvdaftary/Edelweiss/assets/60394627/1e80ad5b-4580-4a25-a52f-58a17ff70715">
-
-
-
-
+<img width="958" alt="image" src="https://github.com/dhruvdaftary/Edelweiss/assets/60394627/b9e45472-7c70-4af0-b6f0-32840e28ccda">
+<img width="947" alt="image" src="https://github.com/dhruvdaftary/Edelweiss/assets/60394627/0069d62c-faba-47fb-bfbb-4a45a253b8d1">
+<img width="947" alt="image" src="https://github.com/dhruvdaftary/Edelweiss/assets/60394627/8682791a-4ce1-4876-b85b-c6580c4f680e">
 
 ## Table of Contents
 
